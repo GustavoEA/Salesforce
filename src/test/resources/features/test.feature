@@ -1,7 +1,7 @@
-Feature: RyanAir Exam
+Feature: Salesforce Test
 
-  Scenario: Invalid Payment
-    Given A logged user access to RyanAir
-    When Search for a flight to Rome
-    And Go through the booking process
-    Then Check the invalid payment
+  Scenario: Basic Flow
+    Given A logged user access to Salesforce
+#    When Search for a flight to Rome
+#    And Go through the booking process
+#    Then Check the invalid payment

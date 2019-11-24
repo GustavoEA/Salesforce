@@ -3,20 +3,21 @@ package org.ctsqa.salesforce.stepDefinition;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
+import net.thucydides.core.annotations.Steps;
+import org.ctsqa.salesforce.actions.GeneralActions;
 
 public class StepsDefinitions {
 
 
-//    @Steps
+    @Steps
+    private
+    GeneralActions generalActions;
 
 
-    @Given("A user access youtube throught google")
-    public void accessRyanAir() {
-
-    }
-
-    @Given("A logged user access to RyanAir")
+    @Given("A logged user access to Salesforce")
     public void userLoggedAccess() {
+        generalActions.openBrowser();
+        generalActions.killCookies();
     }
 
     @Then("Search for a flight to Rome")

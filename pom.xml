@@ -45,6 +45,13 @@
             <artifactId>maven-compiler-plugin</artifactId>
             <version>3.8.1</version>
         </dependency>
+<!--        Maven Surefire -->
+        <dependency>
+            <groupId>org.apache.maven.surefire</groupId>
+            <artifactId>surefire</artifactId>
+            <version>3.0.0-M4</version>
+            <type>pom</type>
+        </dependency>
         <!--        SERENITY BDD-->
         <dependency>
             <groupId>net.serenity-bdd</groupId>

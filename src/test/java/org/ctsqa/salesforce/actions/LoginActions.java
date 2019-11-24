@@ -1,16 +1,18 @@
 package org.ctsqa.salesforce.actions;
 
-import org.ctsqa.salesforce.elements.LoginElements;
-import org.ctsqa.salesforce.elements.MainPageElements;
+import static com.codeborne.selenide.Selenide.sleep;
+import static org.ctsqa.salesforce.elements.LoginElements.*;
 
 public class LoginActions {
 
+    MainPageActions mainPageActions = new MainPageActions();
 
-    public void login(){
+    public void login() {
 
-        LoginElements.USERNAME.sendKeys("Ryanairtestermaster@gmail.com");
-        LoginElements.PASSWORD.sendKeys("Ryanair123");
-
+        mainPageActions.accessToLogin();
+        USERNAME.sendKeys("Ryanairtestermaster@gmail.com");
+        PASSWORD.sendKeys("Ryanair123");
+        LOGIN_BTN.click();
     }
 
 }

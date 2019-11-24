@@ -10,5 +10,6 @@ public class LoginElements {
 
     public static final SelenideElement USERNAME = $(byId("username"));
     public static final SelenideElement PASSWORD = $(byId("password"));
+    public static final SelenideElement LOGIN_BTN = $(byId("Login"));
 
 }

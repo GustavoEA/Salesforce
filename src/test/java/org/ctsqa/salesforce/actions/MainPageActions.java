@@ -1,13 +1,18 @@
 package org.ctsqa.salesforce.actions;
 
-import org.ctsqa.salesforce.elements.MainPageElements;
+
+import static org.ctsqa.salesforce.elements.MainPageElements.*;
 
 public class MainPageActions {
 
 
-    public void accesToLogin(){
-
-        MainPageElements.LOGIN_BTN.click();
+    public void accessToLogin(){
+       LOGIN_BTN.click();
     }
+    public void accessTolightningPlatform(){
+        PRODUCTS.hover();
+        LIGHTNING_PLATFORM.click();
+    }
+
 
 }
