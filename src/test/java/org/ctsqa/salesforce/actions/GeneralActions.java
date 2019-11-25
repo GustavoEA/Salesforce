@@ -10,7 +10,7 @@ public class GeneralActions {
 
 
     public void openBrowser() {
-        open("https://salesforce.com/");
+        open("https://salesforce.com/eu");
 
     }
 
