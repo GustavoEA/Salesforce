@@ -9,7 +9,7 @@ public class MainPageElements {
 
 
     public static final SelenideElement PRIVACITY = $(byId("onetrust-accept-btn-handler"));
-    public static final SelenideElement LOGIN_BTN = $(byId("login-button"));
+    public static final SelenideElement LOGIN_BTN = $(byId("inicio-de-sesion"));
     public static final SelenideElement COOKIES = $(byId("dfc-cookie-info-bar-button"));
     public static final SelenideElement PRODUCTS = $(byXpath("//*[@id=\"nav-to-highlight-based-on-url2\"]/li[1]/a"));
     public static final SelenideElement LIGHTNING_PLATFORM = $(byXpath("//*[@id=\"nav-to-highlight-based-on-url2\"]/li[1]/ul/li/div[1]/ul/li[1]/a"));
