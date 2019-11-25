@@ -20,5 +20,6 @@ public class JunitRunner {
         mainPageActions.privacity();
         loginActions.login();
         mainPageActions.accessTolightningPlatform();
+        
     }
 }
