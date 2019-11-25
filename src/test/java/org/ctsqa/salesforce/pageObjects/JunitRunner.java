@@ -23,7 +23,8 @@ public class JunitRunner {
         generalActions.openBrowser();
         mainPageActions.privacity();
         loginActions.login();
-        mainPageActions.accessTolightningPlatform();
+        mainPageActions.changeView();
+        //mainPageActions.accessTolightningPlatform();
         leadsActions.LeadsNew();
 
 

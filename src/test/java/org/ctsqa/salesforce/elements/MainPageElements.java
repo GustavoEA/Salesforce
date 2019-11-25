@@ -7,7 +7,8 @@ import static com.codeborne.selenide.Selenide.$;
 
 public class MainPageElements {
 
-
+    public static final SelenideElement APP_LAUNCHER = $(byXpath("//div[@class='slds-icon-waffle']"));
+    public static final SelenideElement SALES_LAUNCH = $(byXpath("//li[@id='02u5J000000EOydQAG']//div[@class='slds-app-launcher__tile-body']"));
     public static final SelenideElement PRIVACITY = $(byId("onetrust-accept-btn-handler"));
     public static final SelenideElement LOGIN_BTN = $(byXpath("//a[contains(text(),'Login')]"));
     public static final SelenideElement COOKIES = $(byId("dfc-cookie-info-bar-button"));
