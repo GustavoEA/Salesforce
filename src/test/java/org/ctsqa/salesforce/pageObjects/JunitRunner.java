@@ -6,8 +6,6 @@ import org.ctsqa.salesforce.actions.LoginActions;
 import org.ctsqa.salesforce.actions.MainPageActions;
 import org.junit.Test;
 
-import static com.codeborne.selenide.Selenide.sleep;
-
 public class JunitRunner {
 
 
@@ -24,8 +22,9 @@ public class JunitRunner {
         mainPageActions.privacity();
         loginActions.login();
         mainPageActions.changeView();
-        //mainPageActions.accessTolightningPlatform();
-        leadsActions.LeadsNew();
+        leadsActions.leadsNew();
+        leadsActions.details();
+    //        leadsActions.moreActions();
 
 
 

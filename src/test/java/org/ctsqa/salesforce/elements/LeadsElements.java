@@ -7,12 +7,29 @@ import static com.codeborne.selenide.Selenide.$;
 
 public class LeadsElements {
 
-    public static final SelenideElement LEADS_LABEL = $(byTitle("Leads"));
-    public static final SelenideElement LEADS_NEW = $(byTitle("New"));
-    //public static final SelenideElement NEWLEAD_SALUTATION = $(byXpath("//article[1]//div[1]/div[1]/div[1]/div[2]//a[1]"));
-    public static final SelenideElement NEWLEAD_FIRSTNAME= $(byClassName("firstName"));
-    public static final SelenideElement NEWLEAD_LASTNAME = $(byClassName("lastName"));
-    public static final SelenideElement NEWLEAD_COMPANY = $(byXpath("//div[1]/div[1]/div[1]/div[3]/div[1]//input[1]"));
-    public static final SelenideElement NEWLEAD_SAVE_BUTTON = $(byTitle("Save"));
+    //    Open New LEAD
+    public static final SelenideElement LEADS_DROPDOWN_BTN = $(byXpath("/html/body/div[5]/div[1]/section/header/div[3]/one-appnav/div/one-app-nav-bar/nav/div/one-app-nav-bar-item-root[3]/one-app-nav-bar-item-dropdown/div/one-app-nav-bar-menu-button/a"));
+    public static final SelenideElement NEW_LEAD = $(byXpath("/html/body/div[5]/div[1]/section/header/div[3]/one-appnav/div/one-app-nav-bar/nav/div/one-app-nav-bar-item-root[3]/one-app-nav-bar-item-dropdown/div/one-app-nav-bar-menu-button/div/div/slot/one-app-nav-bar-menu-item[1]"));
 
+    //    New Lead Data
+    public static final SelenideElement SALUTATION_BTN = $(byXpath("//div/div[2]/div[1]/div/div/fieldset/div/div[1]/div"));
+    public static final SelenideElement SALUTATION_MR = $(byXpath("//a[contains(text(),'Mr.')]"));
+    public static final SelenideElement FIRST_NAME= $(byClassName("firstName"));
+    public static final SelenideElement LAST_NAME = $(byClassName("lastName"));
+    public static final SelenideElement COMPANY = $(byXpath("//div[1]/div[1]/div[1]/div[3]/div[1]//input[1]"));
+    public static final SelenideElement TITLE = $(byXpath("/html[1]/body[1]/div[5]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/article[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[4]/div[1]/div[1]/div[1]/div[1]/input[1]"));
+    public static final SelenideElement MAIL = $(byXpath("/html[1]/body[1]/div[5]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/article[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[4]/div[2]/div[1]/div[1]/div[1]/input[1]"));
+    public static final SelenideElement LEAD_SOURCE = $(byXpath("/html[1]/body[1]/div[5]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/article[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[5]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/a[1]"));
+    public static final SelenideElement SOURCE_WEB = $(byXpath("/html[1]/body[1]/div[11]/div[1]/ul[1]/li[2]/a[1]"));
+    public static final SelenideElement INDUSTRY = $(byXpath("/html[1]/body[1]/div[5]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/article[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[6]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]"));
+    public static final SelenideElement INDUSTRY_APPAREL = $(byXpath("/html[1]/body[1]/div[12]/div[1]/ul[1]/li[3]/a[1]"));
+    public static final SelenideElement CITY = $(byXpath("/html[1]/body[1]/div[5]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/article[1]/div[3]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/fieldset[1]/div[1]/div[2]/div[1]/div[1]/input[1]"));
+    public static final SelenideElement COUNTRY = $(byXpath("/html[1]/body[1]/div[5]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/article[1]/div[3]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/fieldset[1]/div[1]/div[3]/div[2]/div[1]/input[1]"));
+    public static final SelenideElement SAVE_BUTTON = $(byTitle("Save"));
+    //    Details
+    public static final SelenideElement DETAILS_BTN = $(byText("Details"));
+    //    More Actions
+    public static final SelenideElement MORE_ACTIONS_BTN = $(byXpath("//a[@class='slds-grid slds-grid--vertical-align-center slds-grid--align-center sldsButtonHeightFix']"));
+    public static final SelenideElement CONVERT = $(byXpath("/html[1]/body[1]/div[8]/div[1]/ul[1]/li[6]/a[1]/div[1]"));
+    //    public static final SelenideElement CONVERT = $(byTitle("Convert"));
 }
