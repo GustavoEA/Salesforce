@@ -13,6 +13,7 @@ public class LoginActions {
         USERNAME.sendKeys("Ryanairtestermaster@gmail.com");
         PASSWORD.sendKeys("Ryanair123");
         LOGIN_BTN.click();
+        
     }
 
 }
