@@ -12,6 +12,7 @@ public class LeadsElements {
     //public static final SelenideElement NEWLEAD_SALUTATION = $(byXpath("//article[1]//div[1]/div[1]/div[1]/div[2]//a[1]"));
     public static final SelenideElement NEWLEAD_FIRSTNAME= $(byClassName("firstName"));
     public static final SelenideElement NEWLEAD_LASTNAME = $(byClassName("lastName"));
-    public static final SelenideElement NEWLEAD_COMPANY = $(byXpath("//div[1]/div[1]/div[1]/div[1]/input[1]"));
+    public static final SelenideElement NEWLEAD_COMPANY = $(byXpath("//div[1]/div[1]/div[1]/div[3]/div[1]//input[1]"));
+    public static final SelenideElement NEWLEAD_SAVE_BUTTON = $(byTitle("Save"));
 
 }

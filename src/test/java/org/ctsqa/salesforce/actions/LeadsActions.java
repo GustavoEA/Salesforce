@@ -18,6 +18,7 @@ public class LeadsActions {
         LeadsElements.NEWLEAD_FIRSTNAME.setValue("Invent");
         LeadsElements.NEWLEAD_LASTNAME.setValue("total");
         LeadsElements.NEWLEAD_COMPANY.setValue("company");
+        LeadsElements.NEWLEAD_SAVE_BUTTON.click();
 
 
 
