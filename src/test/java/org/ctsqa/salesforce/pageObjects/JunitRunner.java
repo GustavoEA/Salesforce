@@ -17,9 +17,8 @@ public class JunitRunner {
     @Test
     public void accessLogin() {
         generalActions.openBrowser();
+        mainPageActions.privacity();
         loginActions.login();
         mainPageActions.accessTolightningPlatform();
-
-
     }
 }

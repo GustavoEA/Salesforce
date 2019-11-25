@@ -14,5 +14,9 @@ public class MainPageActions {
         LIGHTNING_PLATFORM.click();
     }
 
+    public void privacity() {
+        PRIVACITY.click();
+    }
+
 
 }
