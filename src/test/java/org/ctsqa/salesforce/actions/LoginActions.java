@@ -14,6 +14,6 @@ public class LoginActions {
         PASSWORD.sendKeys("Ryanair123");
         LOGIN_BTN.click();
         
-    }
+    }a
 
 }
