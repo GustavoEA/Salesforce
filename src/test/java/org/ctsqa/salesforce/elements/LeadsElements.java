@@ -1,9 +1,12 @@
 package org.ctsqa.salesforce.elements;
 
-import com.codeborne.selenide.SelenideElement;
+        import com.codeborne.selenide.Condition;
+        import com.codeborne.selenide.SelenideElement;
+        import cucumber.api.java.eo.Se;
+        import org.openqa.selenium.By;
 
-import static com.codeborne.selenide.Selectors.*;
-import static com.codeborne.selenide.Selenide.$;
+        import static com.codeborne.selenide.Selectors.*;
+        import static com.codeborne.selenide.Selenide.$;
 
 public class LeadsElements {
 
@@ -30,6 +33,24 @@ public class LeadsElements {
     public static final SelenideElement DETAILS_BTN = $(byText("Details"));
     //    More Actions
     public static final SelenideElement MORE_ACTIONS_BTN = $(byXpath("//a[@class='slds-grid slds-grid--vertical-align-center slds-grid--align-center sldsButtonHeightFix']"));
-    public static final SelenideElement CONVERT = $(byXpath("/html[1]/body[1]/div[8]/div[1]/ul[1]/li[6]/a[1]/div[1]"));
-    //    public static final SelenideElement CONVERT = $(byTitle("Convert"));
+    public static final SelenideElement CONVERT = $(byXpath("//div[@class='branding-actions actionMenu']//li[6]//a[1]"));
+
+    //    Convert Lead
+
+    public static final SelenideElement HIDE_ACCOUNT_BTN = $(byXpath("//span[@class='slds-truncate slds-text-heading_x-small displayLabel'][contains(text(),'Account')]"));
+    public static final SelenideElement CONVERT_BTN = $(byXpath("//div[@class='modal-footer slds-modal__footer']//button[@class='slds-button slds-button--neutral uiButton--default uiButton--brand uiButton runtime_sales_leadConvertModalFooter']"));
+    public static final SelenideElement GOTOLEADS_BTN =$(byXpath("//div[@class='modal-footer slds-modal__footer']//button[@class='slds-button slds-button_brand']"));
+
+    //     Modify Opportunity
+    public static final SelenideElement OPPORTUNITY_ARROW = $(byXpath("/html[1]/body[1]/div[5]/div[1]/section[1]/header[1]/div[3]/one-appnav[1]/div[1]/one-app-nav-bar[1]/nav[1]/div[1]/one-app-nav-bar-item-root[2]/one-app-nav-bar-item-dropdown[1]/div[1]"));
+    public static final SelenideElement FIRST_OPPORTUNITY = $(byXpath("//div[@class='slds-dropdown slds-dropdown--center slds-nubbin--top']//div[@class='menuItemsWrapper']//one-app-nav-bar-menu-item[2]"));
+    public static final SelenideElement DETAILS_LABEL = $(byXpath("//div[@class='windowViewMode-normal oneContent active lafPageHost']//span[@class='title'][contains(text(),'Details')]"));
+    public static final SelenideElement EDIT_COMPETITORS= $(byTitle("Edit Main Competitor(s)"));
+    public static final SelenideElement COMPETITORS = $(byXpath("/html[1]/body[1]/div[5]/div[1]/section[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/section[2]/div[1]/div[1]/article[1]/div[3]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/input[1]"));
+
+
+
+
+
+
 }

@@ -24,7 +24,8 @@ public class JunitRunner {
         mainPageActions.changeView();
         leadsActions.leadsNew();
         leadsActions.details();
-    //        leadsActions.moreActions();
+        leadsActions.moreActions();
+        leadsActions.convertLead();
 
 
 

@@ -1,5 +1,9 @@
 package org.ctsqa.salesforce.actions;
 
+import com.codeborne.selenide.Condition;
+import com.codeborne.selenide.Selenide;
+import org.junit.Test;
+
 import static com.codeborne.selenide.Selenide.sleep;
 import static org.ctsqa.salesforce.elements.LeadsElements.*;
 
@@ -38,6 +42,32 @@ public class LeadsActions {
     public void moreActions(){
         MORE_ACTIONS_BTN.click();
         CONVERT.click();
+    }
+
+    @Test
+    public void convertLead() {
+        //OPPORTUNITY.click();
+        //OPPORTUNITY_NAME.setValue("test");
+        HIDE_ACCOUNT_BTN.click();
+        sleep(2000);
+        CONVERT_BTN.click();
+        sleep(2000);
+        CONVERT_BTN.click();
+        GOTOLEADS_BTN.click();
+        OPPORTUNITY_ARROW.click();
+        sleep(1000);
+        FIRST_OPPORTUNITY.click();
+        DETAILS_LABEL.click();
+        EDIT_COMPETITORS.click();
+        COMPETITORS.setValue("some");
+
+
+
+
+
+
+
+
 
     }
 }
