@@ -1,9 +1,6 @@
 package org.ctsqa.salesforce.actions;
 
 
-import org.junit.Test;
-
-import static com.codeborne.selenide.Selenide.sleep;
 import static org.ctsqa.salesforce.elements.MainPageElements.*;
 
 public class MainPageActions {
@@ -24,7 +21,7 @@ public class MainPageActions {
     }
 
     public void privacity() {
-        PRIVACITY.click();
+        PRIVACY.click();
     }
 
 

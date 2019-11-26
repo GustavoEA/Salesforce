@@ -12,7 +12,7 @@ public class MainPageElements {
     public static final SelenideElement SALES_BTN = $(byXpath("/html/body/div[5]/div[2]/div/div[2]/div/div[2]/div/div[1]/div[2]/div/section/div/ul/li[8]/div/div/div/div[2]"));
     //    Open "SALES"
     public static final SelenideElement LOGIN_BTN = $(byXpath("//a[contains(text(),'Login')]"));
-    public static final SelenideElement PRIVACITY = $(byId("onetrust-accept-btn-handler"));
+    public static final SelenideElement PRIVACY = $(byId("onetrust-accept-btn-handler"));
     public static final SelenideElement COOKIES = $(byId("dfc-cookie-info-bar-button"));
     public static final SelenideElement PRODUCTS = $(byXpath("//*[@id=\"nav-to-highlight-based-on-url2\"]/li[1]/a"));
     public static final SelenideElement LIGHTNING_PLATFORM = $(byXpath("//*[@id=\"nav-to-highlight-based-on-url2\"]/li[1]/ul/li/div[1]/ul/li[1]/a"));

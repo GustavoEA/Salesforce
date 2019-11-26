@@ -1,10 +1,5 @@
 package org.ctsqa.salesforce.actions;
 
-import com.codeborne.selenide.Selenide;
-import net.thucydides.core.pages.components.Dropdown;
-import org.ctsqa.salesforce.elements.LeadsElements;
-import org.junit.Test;
-
 import static com.codeborne.selenide.Selenide.sleep;
 import static org.ctsqa.salesforce.elements.LeadsElements.*;
 
@@ -34,7 +29,7 @@ public class LeadsActions {
 //        COUNTRY.setValue("Spain");
 
 
-        SAVE_BUTTON.click();
+        SAVE_BTN.click();
     }
 
     public void details(){

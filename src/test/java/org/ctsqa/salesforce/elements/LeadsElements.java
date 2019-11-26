@@ -25,7 +25,7 @@ public class LeadsElements {
     public static final SelenideElement INDUSTRY_APPAREL = $(byXpath("/html[1]/body[1]/div[12]/div[1]/ul[1]/li[3]/a[1]"));
     public static final SelenideElement CITY = $(byXpath("/html[1]/body[1]/div[5]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/article[1]/div[3]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/fieldset[1]/div[1]/div[2]/div[1]/div[1]/input[1]"));
     public static final SelenideElement COUNTRY = $(byXpath("/html[1]/body[1]/div[5]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/article[1]/div[3]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/fieldset[1]/div[1]/div[3]/div[2]/div[1]/input[1]"));
-    public static final SelenideElement SAVE_BUTTON = $(byTitle("Save"));
+    public static final SelenideElement SAVE_BTN = $(byTitle("Save"));
     //    Details
     public static final SelenideElement DETAILS_BTN = $(byText("Details"));
     //    More Actions
