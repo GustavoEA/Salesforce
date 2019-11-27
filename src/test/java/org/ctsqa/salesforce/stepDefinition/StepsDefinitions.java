@@ -19,6 +19,7 @@ public class StepsDefinitions {
         generalActions.openBrowser();
         generalActions.killCookies();
     }
+    
 
     @Then("Search for a flight to Rome")
     public void selectFlight() {
