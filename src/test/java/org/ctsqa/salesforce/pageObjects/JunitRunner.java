@@ -19,11 +19,15 @@ public class JunitRunner {
     @Test
     public void accessLogin() {
         generalActions.openBrowser();
-        mainPageActions.privacity();
+        mainPageActions.privacy();
         loginActions.login();
-        mainPageActions.changeView();
+
+        mainPageActions.openSales();
+
         leadsActions.leadsNew();
+
         leadsActions.details();
+
         leadsActions.moreActions();
         leadsActions.convertLead();
 

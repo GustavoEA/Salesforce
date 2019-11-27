@@ -7,7 +7,7 @@ public class MainPageActions {
 
 
 
-    public void changeView() {
+    public void openSales() {
         APP_LAUNCHER.click();
         SALES_BTN.click();
     }
@@ -15,12 +15,9 @@ public class MainPageActions {
     public void accessToLogin(){
        LOGIN_BTN.click();
     }
-    public void accessToLightningPlatform(){
-        PRODUCTS.hover();
-        LIGHTNING_PLATFORM.click();
-    }
 
-    public void privacity() {
+    public void privacy() {
+
         PRIVACY.click();
     }
 

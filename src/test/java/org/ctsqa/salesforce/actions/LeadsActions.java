@@ -1,7 +1,7 @@
 package org.ctsqa.salesforce.actions;
 
 import com.codeborne.selenide.Condition;
-import com.codeborne.selenide.Selenide;
+import com.codeborne.selenide.conditions.Enabled;
 import org.junit.Test;
 
 import static com.codeborne.selenide.Selenide.sleep;
@@ -27,8 +27,8 @@ public class LeadsActions {
         MAIL.setValue("inv@Domain.com");
         LEAD_SOURCE.click();
         SOURCE_WEB.click();
-//        INDUSTRY.click();
-//        INDUSTRY_APPAREL.click();
+//       INDUSTRY.click();
+//       INDUSTRY_APPAREL.click();
 //        CITY.setValue("Madrid");
 //        COUNTRY.setValue("Spain");
 
@@ -44,7 +44,6 @@ public class LeadsActions {
         CONVERT.click();
     }
 
-    @Test
     public void convertLead() {
         //OPPORTUNITY.click();
         //OPPORTUNITY_NAME.setValue("test");
@@ -60,6 +59,19 @@ public class LeadsActions {
         DETAILS_LABEL.click();
         EDIT_COMPETITORS.click();
         COMPETITORS.setValue("some");
+        SAVE_OPPORTUNITY_BTN.click();
+        CLOSED_TAB.scrollIntoView(false);
+        CLOSED_TAB.click();
+        SELECT_CLOSED.click();
+        sleep(2000);
+        //SELECT_CLOSED_DROPDOWN.click();
+        //SELECT_CLOSED_DROPDOWN.selectOptionByValue("_Closed_Placeholder_");
+        //SELECT_CLOSED_DROPDOWN.selectOptionByValue("Closed Won");
+        //SAVE_CLOSED_BTN.click();
+
+
+
+
 
 
 
