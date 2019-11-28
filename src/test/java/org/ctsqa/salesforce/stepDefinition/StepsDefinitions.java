@@ -37,7 +37,7 @@ public class StepsDefinitions {
 
 
     @Given("^a user is logged into \"(.*)\"")
-    public void userLoggedAccess() {
+    public void userLoggedAccess(String web) {
         generalActions.openBrowser();
         mainPageActions.privacy();
         loginActions.login();
@@ -49,32 +49,29 @@ public class StepsDefinitions {
     }
 
     @When("^creates a new \"(.*)\"")
-    public void newLead(){
+    public void newLead(String newSomething){
        leadsActions.leadsNew();
     }
 
     @When("^checks \"(.*)\"")
-    public void checkDetails(){
+    public void checkDetails(String checkSomething){
         leadsActions.details();
     }
-    @When("^checks \"(.*)\"")
-    public void checkMoreActions(){
-        leadsActions.moreActions();
-    }
+
     @When("^converts the \"(.*)\"")
-    public void convertLead(){
+    public void convertLead(String convertSomething){
         leadsActions.convertLead();
     }
     @When("^modifies the \"(.*)\"")
-    public void modifyOpportunity(){
+    public void modifyOpportunity(String modifySomething){
         leadsActions.modifyOpportunity();
     }
     @When("^closes the \"(.*)\"")
-    public void closeLead(){
+    public void closeLead(String closeSomething){
         leadsActions.closeLead();
     }
     @Then("^the user should see the lead created and closed \"(.*)\"")
-    public void leadCreatedClosed(){
+    public void leadCreatedClosed(String whatever){
 
     }
 }

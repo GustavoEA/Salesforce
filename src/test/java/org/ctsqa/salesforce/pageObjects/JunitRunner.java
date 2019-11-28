@@ -31,6 +31,8 @@ public class JunitRunner {
         leadsActions.moreActions();
         leadsActions.convertLead();
 
+        leadsActions.modifyOpportunity();
+        leadsActions.closeLead();
 
 
         

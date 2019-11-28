@@ -1,10 +1,5 @@
 Feature: Salesforce Test
 
-  Scenario: Basic Flow
-    Givena
-#    When Search for a flight to Rome
-#    And Go through the booking process
-#    Then Check the invalid payment
 
   Scenario: Eduardo's test
     Given a user is logged into "Salesforce"
