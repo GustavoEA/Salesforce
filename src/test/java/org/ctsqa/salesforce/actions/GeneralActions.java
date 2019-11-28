@@ -9,14 +9,10 @@ import static org.ctsqa.salesforce.elements.MainPageElements.*;
 public class GeneralActions {
 
 
-
     public void openBrowser() {
         open("https://salesforce.com/eu");
 
     }
-
-
-
     public void killCookies() {COOKIES.click();}
 
 }

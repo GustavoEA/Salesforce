@@ -41,10 +41,10 @@ public class LeadsActions {
 
     public void moreActions() {
         MORE_ACTIONS_BTN.click();
-        CONVERT.click();
     }
 
     public void convertLead() {
+        CONVERT.click();
         //OPPORTUNITY.click();
         //OPPORTUNITY_NAME.setValue("test");
         HIDE_ACCOUNT_BTN.click();
