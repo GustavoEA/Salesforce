@@ -35,11 +35,13 @@ public class LeadsElements {
 
     //    More Actions
     public static final SelenideElement MORE_ACTIONS_BTN = $(byXpath("//a[@class='slds-grid slds-grid--vertical-align-center slds-grid--align-center sldsButtonHeightFix']"));
-    public static final SelenideElement CONVERT = $(byXpath("//div[@class='branding-actions actionMenu']//li[6]//a[1]"));
+    //public static final SelenideElement CONVERT = $(byXpath("//div[@class='branding-actions actionMenu']//li[6]//a[1]"));
 
     //    Convert Lead
     public static final SelenideElement HIDE_ACCOUNT_BTN = $(byXpath("//span[@class='slds-truncate slds-text-heading_x-small displayLabel'][contains(text(),'Account')]"));
-    public static final SelenideElement CONVERT_BTN = $(byXpath("//div[@class='modal-footer slds-modal__footer']//button[@class='slds-button slds-button--neutral uiButton--default uiButton--brand uiButton runtime_sales_leadConvertModalFooter']"));
+    public static final SelenideElement CONVERT_BTN = $(byXpath("/html[1]/body[1]/div[10]/div[1]/ul[1]/li[6]/a[1]"));
+    //public static final SelenideElement CONVERT_BTN = $(byXpath("//div[@class='modal-footer slds-modal__footer']//button[@class='slds-button slds-button--neutral uiButton--default uiButton--brand uiButton runtime_sales_leadConvertModalFooter']"));
+    public static final SelenideElement FINISH_CONVERT = $(byXpath("//button[@class='slds-button slds-button--neutral uiButton--default uiButton--brand uiButton runtime_sales_leadConvertModalFooter']"));
     public static final SelenideElement GOTOLEADS_BTN =$(byXpath("//div[@class='modal-footer slds-modal__footer']//button[@class='slds-button slds-button_brand']"));
 
     //     Modify Opportunity

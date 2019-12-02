@@ -41,17 +41,17 @@ public class LeadsActions {
 
     public void moreActions() {
         MORE_ACTIONS_BTN.click();
-        CONVERT.click();
     }
 
     public void convertLead() {
+        CONVERT_BTN.click();
         //OPPORTUNITY.click();
         //OPPORTUNITY_NAME.setValue("test");
         HIDE_ACCOUNT_BTN.click();
         sleep(2000);
-        CONVERT_BTN.click();
+        FINISH_CONVERT.click();
         sleep(2000);
-        CONVERT_BTN.click();
+        FINISH_CONVERT.click();
     }
 
     public void modifyOpportunity() {
@@ -69,7 +69,7 @@ public class LeadsActions {
         CLOSED_TAB.scrollIntoView(false);
         CLOSED_TAB.click();
         SELECT_CLOSED.click();
-        sleep(2000);
+        sleep(200000);
         //SELECT_CLOSED_DROPDOWN.click();
         //SELECT_CLOSED_DROPDOWN.selectOptionByValue("_Closed_Placeholder_");
         //SELECT_CLOSED_DROPDOWN.selectOptionByValue("Closed Won");
