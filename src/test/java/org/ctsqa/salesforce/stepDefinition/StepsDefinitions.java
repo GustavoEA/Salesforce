@@ -44,6 +44,7 @@ public class StepsDefinitions {
 
     @When("^creates a new Lead$")
     public void newLead() {
+        leadsActions.openNewLeadForm();
         leadsActions.leadsNew();
     }
 
@@ -70,32 +71,5 @@ public class StepsDefinitions {
 
     @Then("^the user should see the lead created and closed \"(.*)\"")
     public void leadCreatedClosed() {
-    }
-
-    @Given("All the test in one")
-    public void alltestinone() {
-//#    Given a user is logged into Salesforce
-        generalActions.openBrowser();
-        mainPageActions.privacy();
-        loginActions.login();
-
-//#    When the user opens Sales
-        mainPageActions.openSales();
-
-//#    And creates a new Lead
-        leadsActions.leadsNew();
-//      And checks the details
-        leadsActions.details();
-
-//#    And converts the Lead
-        leadsActions.moreActions();
-        leadsActions.convertLead();
-
-//#    And modifies the Opportunity
-        oportunityActions.modifyOpportunity();
-//#    And closes the Lead
-        oportunityActions.closeOportunity();
-
-
     }
 }

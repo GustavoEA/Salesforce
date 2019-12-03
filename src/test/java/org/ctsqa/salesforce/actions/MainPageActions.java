@@ -7,6 +7,10 @@ public class MainPageActions {
 
 
 
+    public void privacy() {
+        PRIVACY.click();
+    }
+
     public void openSales() {
         APP_LAUNCHER.click();
         SALES_BTN.click();
@@ -14,11 +18,6 @@ public class MainPageActions {
 
     public void accessToLogin(){
        LOGIN_BTN.click();
-    }
-
-    public void privacy() {
-
-        PRIVACY.click();
     }
 
 

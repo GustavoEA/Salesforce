@@ -11,10 +11,12 @@ import static org.ctsqa.salesforce.elements.LeadsElements.*;
 public class LeadsActions {
 
 
+//    Estoy intentando separar las acciones y hacerlas mas concretas, que no cocretas mmm cocretas, creo que es hora de ir a comer
+public void openNewLeadForm(){
+    LEADS_DROPDOWN_BTN.click();
+    NEW_LEAD.click();
+}
     public void leadsNew() {
-
-        LEADS_DROPDOWN_BTN.click();
-        NEW_LEAD.click();
         sleep(2000);
         SALUTATION_BTN.click();
         SALUTATION_MR.click();
