@@ -1,20 +1,10 @@
 package org.ctsqa.salesforce.stepDefinition;
 
-import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import net.thucydides.core.annotations.Steps;
-import net.thucydides.core.annotations.WhenPageOpens;
-import org.ctsqa.salesforce.actions.GeneralActions;
-import org.ctsqa.salesforce.actions.LeadsActions;
-import org.ctsqa.salesforce.actions.LoginActions;
-import org.ctsqa.salesforce.actions.MainPageActions;
-
-import static com.codeborne.selenide.Selenide.sleep;
-import static org.ctsqa.salesforce.elements.LeadsElements.*;
-import static org.ctsqa.salesforce.elements.MainPageElements.APP_LAUNCHER;
-import static org.ctsqa.salesforce.elements.MainPageElements.SALES_BTN;
+import org.ctsqa.salesforce.actions.*;
 
 public class StepsDefinitions {
 
@@ -35,8 +25,12 @@ public class StepsDefinitions {
     private
     LoginActions loginActions;
 
+    @Steps
+    private
+    OportunityActions oportunityActions;
 
-    @Given("^a user is logged into Salesforce$")
+
+    @Given("^a user is logged into SalesForce$")
     public void userLoggedAccess() {
         generalActions.openBrowser();
         mainPageActions.privacy();
@@ -49,32 +43,59 @@ public class StepsDefinitions {
     }
 
     @When("^creates a new Lead$")
-    public void newLead(){
-       leadsActions.leadsNew();
+    public void newLead() {
+        leadsActions.leadsNew();
     }
 
     @When("^checks Details$")
-    public void checkDetails(){
+    public void checkDetails() {
         leadsActions.details();
     }
 
     @When("^converts the Lead$")
-    public void convertLead(){
+    public void convertLead() {
+        leadsActions.moreActions();
         leadsActions.convertLead();
     }
 
     @When("^modifies the Opportunity$")
-    public void modifyOpportunity(){
-        leadsActions.modifyOpportunity();
+    public void modifyOpportunity() {
+        oportunityActions.modifyOpportunity();
     }
 
     @When("^closes the Lead$")
-    public void closeLead(){
-        leadsActions.closeLead();
+    public void closeLead() {
+        oportunityActions.closeOportunity();
     }
 
     @Then("^the user should see the lead created and closed \"(.*)\"")
-    public void leadCreatedClosed(){
+    public void leadCreatedClosed() {
+    }
+
+    @Given("All the test in one")
+    public void alltestinone() {
+//#    Given a user is logged into Salesforce
+        generalActions.openBrowser();
+        mainPageActions.privacy();
+        loginActions.login();
+
+//#    When the user opens Sales
+        mainPageActions.openSales();
+
+//#    And creates a new Lead
+        leadsActions.leadsNew();
+//      And checks the details
+        leadsActions.details();
+
+//#    And converts the Lead
+        leadsActions.moreActions();
+        leadsActions.convertLead();
+
+//#    And modifies the Opportunity
+        oportunityActions.modifyOpportunity();
+//#    And closes the Lead
+        oportunityActions.closeOportunity();
+
 
     }
 }

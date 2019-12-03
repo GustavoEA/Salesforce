@@ -22,7 +22,7 @@ public class LeadsActions {
         LAST_NAME.setValue("total");
         COMPANY.setValue("company");
         TITLE.setValue("CEO");
-        sleep(1000);
+        sleep(2000);
         MAIL.setValue("inv@Domain.com");
         LEAD_SOURCE.click();
         SOURCE_WEB.click();
@@ -52,27 +52,7 @@ public class LeadsActions {
         FINISH_CONVERT.click();
         sleep(2000);
         FINISH_CONVERT.click();
-    }
-
-    public void modifyOpportunity() {
         GOTOLEADS_BTN.click();
-        OPPORTUNITY_ARROW.click();
-        sleep(1000);
-        FIRST_OPPORTUNITY.click();
-        DETAILS_LABEL.click();
-        EDIT_COMPETITORS.click();
-        COMPETITORS.setValue("some");
-        SAVE_OPPORTUNITY_BTN.click();
     }
 
-    public void closeLead() {
-        CLOSED_TAB.scrollIntoView(false);
-        CLOSED_TAB.click();
-        SELECT_CLOSED.click();
-        sleep(200000);
-        //SELECT_CLOSED_DROPDOWN.click();
-        //SELECT_CLOSED_DROPDOWN.selectOptionByValue("_Closed_Placeholder_");
-        //SELECT_CLOSED_DROPDOWN.selectOptionByValue("Closed Won");
-        //SAVE_CLOSED_BTN.click();
-    }
 }

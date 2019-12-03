@@ -18,7 +18,8 @@
         <encoding>UTF-8</encoding>
         <tags></tags>
         <parallel.tests>4</parallel.tests>
-        <webdriver.base.url></webdriver.base.url>
+        <webdriver.base.url>default</webdriver.base.url>
+        <webdriver.driver>chrome</webdriver.driver>
     </properties>
 
     <dependencies>
@@ -90,6 +91,11 @@
             <artifactId>cucumber-junit</artifactId>
             <version>4.2.0</version>
         </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.slf4j</groupId>-->
+<!--            <artifactId>slf4j-simple</artifactId>-->
+<!--            <version>1.6.1</version>-->
+<!--        </dependency>-->
     </dependencies>
     <build>
         <plugins>
