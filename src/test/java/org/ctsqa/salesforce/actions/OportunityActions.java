@@ -19,6 +19,8 @@ public class OportunityActions {
         CLOSED_TAB.scrollIntoView(false);
         CLOSED_TAB.click();
         SELECT_CLOSED.click();
+        CLOSE_DROPDOWN.selectOptionByValue("Closed Won");
+        SAVE_CLOSE_OPORTINTY.click();
 
     }
 

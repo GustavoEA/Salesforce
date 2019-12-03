@@ -16,5 +16,7 @@ public class OportunityElements {
 
     public static final SelenideElement CLOSED_TAB = $(byXpath("//div[contains(@class,'windowViewMode-normal oneContent active lafPageHost')]//li[9]//a[1]"));
     public static final SelenideElement SELECT_CLOSED = $(byXpath("//button[contains(@class,'slds-button slds-button--brand slds-path__mark-complete stepAction active uiButton')]"));
+    public static final SelenideElement CLOSE_DROPDOWN = $(byXpath("/html/body/div[5]/div[2]/div/div[2]/div/div[2]/div/div/div/select"));
+    public static final SelenideElement SAVE_CLOSE_OPORTINTY = $(byXpath("/html/body/div[5]/div[2]/div/div[2]/div/div[2]/div/div/div/select"));
 
 }
