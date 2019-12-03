@@ -36,42 +36,45 @@ public class StepsDefinitions {
     LoginActions loginActions;
 
 
-    @Given("^a user is logged into \"(.*)\"")
-    public void userLoggedAccess(String web) {
+    @Given("^a user is logged into Salesforce$")
+    public void userLoggedAccess() {
         generalActions.openBrowser();
         mainPageActions.privacy();
         loginActions.login();
     }
 
-    @When("^the user opens \"(.*)\"")
+    @When("^the user opens Sales$")
     public void openSales() {
         mainPageActions.openSales();
     }
 
-    @When("^creates a new \"(.*)\"")
-    public void newLead(String newSomething){
+    @When("^creates a new Lead$")
+    public void newLead(){
        leadsActions.leadsNew();
     }
 
-    @When("^checks \"(.*)\"")
-    public void checkDetails(String checkSomething){
+    @When("^checks Details$")
+    public void checkDetails(){
         leadsActions.details();
     }
 
-    @When("^converts the \"(.*)\"")
-    public void convertLead(String convertSomething){
+    @When("^converts the Lead$")
+    public void convertLead(){
         leadsActions.convertLead();
     }
-    @When("^modifies the \"(.*)\"")
-    public void modifyOpportunity(String modifySomething){
+
+    @When("^modifies the Opportunity$")
+    public void modifyOpportunity(){
         leadsActions.modifyOpportunity();
     }
-    @When("^closes the \"(.*)\"")
-    public void closeLead(String closeSomething){
+
+    @When("^closes the Lead$")
+    public void closeLead(){
         leadsActions.closeLead();
     }
+
     @Then("^the user should see the lead created and closed \"(.*)\"")
-    public void leadCreatedClosed(String whatever){
+    public void leadCreatedClosed(){
 
     }
 }
