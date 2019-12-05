@@ -46,7 +46,7 @@ public class StepsDefinitions {
     public void newLead() {
         leadsActions.openNewLeadForm();
         leadsActions.leadsNew();
-    }
+    }   
 
     @When("^checks Details$")
     public void checkDetails() {
